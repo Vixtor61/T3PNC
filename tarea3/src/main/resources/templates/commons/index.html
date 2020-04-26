@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Ingreso de nuevo alumno</title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+  	<h1>Ingreso de nuevo alumno</h1>
+    <form action="post" th:action="@{/params}">
+      <label for="name">Nombres</label>
+      <input type="text" id="name" name="name" placeholder="Usuario" style="width: 400px">
+      <br>
+      <label for="lastname">Apellidos</label>
+      <input type="lastname" id="lastname" name="lastname" placeholder="lastname" style="width: 400px">
+      <br>
+      <label for="dateOfBirth">Fecha de Nacimiento</label>
+      <input type="date" id="dateOfBirth" name="dateOfBirth"  style="width: 400px">
+      <br>
+      <label for="placeOfBirth">Lugar de Nacimiento</label>
+      <input type="text" id="placeOfBirth" name="placeOfBirth"  style="width: 400px">
+      <br>
+      <label for="school">Colegio o Instituto</label>
+      <input type="text" id="school" name="school"  style="width: 400px">
+      <br>
+      <label for="homePhone">Telefono fijo</label>
+      <input type="number" id="homePhone" name="homePhone"  style="width: 400px">
+      <br>
+      <label for="mobilePhone">Telefono movil</label>
+      <input type="number" id="mobilePhone" name="mobilePhone"  style="width: 400px">
+      <br>
+      <input type="submit" value="Guardar alumno">
+    </form>
+
+  </body>
+</html>
